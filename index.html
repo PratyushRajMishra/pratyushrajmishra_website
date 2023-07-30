@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratyush Raj Mishra</title>
+    <link rel="shortcut icon" type="x-icon"
+        href="https://png.pngtree.com/png-clipart/20211116/original/pngtree-letter-p-logo-png-image_6941120.png">
+    <script src="https://kit.fontawesome.com/0a5499f580.js" crossorigin="anonymous"></script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton&family=Fira+Sans&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Patua+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Courier+Prime:ital@1&family=Orbitron:wght@700&family=Patua+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Courier+Prime:ital@1&family=Orbitron:wght@700&family=Patua+One&family=Poppins&display=swap');
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Archivo Black', sans-serif;
+            font-family: 'Courier Prime', monospace;
+            font-family: 'Orbitron', sans-serif;
+            font-family: 'Patua One', cursive;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            width: auto;
+            background-color: rgb(28, 28, 88);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0px 23px;
+        }
+
+        nav ul li a {
+            font-family: 'Archivo Black', sans-serif;
+            font-family: 'Patua One', cursive;
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(154, 154, 241);
+        }
+
+        nav ul li a.active {
+            color: rgb(154, 154, 241);
+        }
+
+        main hr {
+            border: 0;
+            background: lavender;
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+
+        .left .index {
+            text-decoration: none;
+            color: white;
+            font-size: 1.5rem;
+            font-family: 'Archivo Black', sans-serif;
+            font-family: 'Courier Prime', monospace;
+            font-family: 'Orbitron', sans-serif;
+            font-family: 'Patua One', cursive;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 130px 0;
+        }
+
+        .firstSection>div {
+            font-family: 'Archivo Black', sans-serif;
+            font-family: 'Patua One', cursive;
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 3.0rem;
+        }
+
+        .leftSection .buttons {
+            padding: 50px 0px;
+        }
+
+        .leftSection .btn {
+            padding: 12px;
+            background: #0e104a;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+        .buttons .btn:hover {
+            background-color: #585ccd;
+        }
+
+        .rightSection img {
+            width: 80%;
+            border-radius: 10% 50%;
+            box-shadow: 10px 20px 10px rgb(148, 60, 231);
+        }
+
+        .purple {
+            color: rgb(170, 110, 226);
+        }
+
+        .text-gray {
+            color: grey;
+        }
+
+        #element {
+            color: rgb(170, 110, 226);
+        }
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        .secondSection h1 {
+            font-size: 2.0rem;
+        }
+
+        .secondSection .box {
+            background: white;
+            width: 69vw;
+            height: 2px;
+            margin: 100px 70px;
+            display: flex;
+        }
+
+        .secondSection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 175px;
+        }
+
+        .image-top {
+            width: 50px;
+            position: relative;
+            top: -60px;
+            left: -25px;
+        }
+
+        .vertical-title {
+            position: relative;
+            width: 150px;
+            top: 40px;
+            right: 50px;
+            font-size: 30px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 50px;
+            right: 50px;
+            color: grey;
+            width: 250px;
+            font-size: 12px;
+        }
+
+        footer {
+            background-color: #0e0e1a;
+            text-align: center;
+            height: auto;
+        }
+
+        footer .footer-first {
+            font-size: 15px;
+        }
+
+        .icons {
+            margin: 10px;
+        }
+
+        .icons a i {
+            width: 100px;
+            color: white;
+        }
+
+        footer .footer-third {
+            font-size: 12px;
+            color: grey;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left"><a class="index" href="index.html">Pratyush's Portfolio</a></div>
+            <div class="right">
+                <ul>
+                    <li><a class="active" href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT ME</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="blog.html">MY BLOG</a></li>
+                    <li><a href="contact.html">CONTACT ME</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, My name is
+                <span class="purple">Pratyush Raj,</span>
+                <div>I am a passionate</div>
+                <span id="element"></span>
+
+                <div class="buttons">
+                    <a href="https://drive.google.com/file/d/1eZglHttFQCFxVG5V6uVfjT5Zg3LHz1Q3/view?usp=sharing"
+                        download="Pratyush's Resume.pdf"  target=”_blank”><button class="btn">Download Resume</button></a>
+                    <a href="https://github.com/PratyushRajMishra?tab=repositories" target="_blank"><button class="btn">My Work</button></a>
+                </div>
+
+            </div>
+            <div class="rightSection">
+                <img src="assets/profile.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <span class="text-gray">What I have done so far</span>
+            <h1>Work Experience</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top" src="assets/web-developer.png" alt="">
+                    <div class="vertical-title">Web Developer</div>
+                    <div class="vertical-desc">
+                        It utilizes a combination of front-end and back-end technologies to provide a seamless user
+                        experience. The front-end is likely developed using HTML, CSS, and JavaScript, ensuring a
+                        visually appealing and interactive design. This allows visitors to navigate through your
+                        projects, view your work samples, and learn more about your background.
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="assets/java.png" alt="">
+                    <div class="vertical-title">JAVA Developer</div>
+                    <div class="vertical-desc">
+                        My Java desktop application is built using Java, a popular programming language known for its
+                        platform independence and robustness. Java applications are developed using the Java Development
+                        Kit (JDK), which provides libraries and tools for creating desktop, web, and mobile
+                        applications.
+                    </div>
+                </div>
+
+                <div class="vertical">
+                    <img class="image-top" src="assets/flutter.png" alt="">
+                    <div class="vertical-title">Flutter Developer</div>
+                    <div class="vertical-desc">
+                        My Flutter chat application utilizes the Flutter framework, a popular open-source UI toolkit
+                        developed by Google. Flutter allows you to build cross-platform applications with a single
+                        codebase, meaning you can develop your app for both iOS and Android platforms simultaneously.
+                    </div>
+                </div>
+
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Pratyush's Developer Portfolio</h3>
+            </div>
+            <div class="icons">
+                <a href="https://www.facebook.com/pratyushraj.mishra.79/" target="_blank"><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/pratyush-raj-mishra-578596240/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+                <a href="https://www.instagram.com/__royal__bhumihar__/" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/PratyushRajMishra"  target="_blank"><i class="fa-brands fa-github " target="_blank"></i></a>
+                <a href="https://www.youtube.com/channel/UCGoF7VOkMSPlS9BRCfODhyA " target="_blank"><i
+                        class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div class="footer-third">
+                Copyright &#169; pratyushrajmishra.com | All rights reserved
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Web Designer', 'Flutter Developer', 'Software Developer'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>

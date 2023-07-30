@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About- Pratyush Raj Mishra</title>
+    <link rel="shortcut icon" type="x-icon"
+        href="https://png.pngtree.com/png-clipart/20211116/original/pngtree-letter-p-logo-png-image_6941120.png">
+    <script src="https://kit.fontawesome.com/0a5499f580.js" crossorigin="anonymous"></script>
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Anton&family=Fira+Sans&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Patua+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Courier+Prime:ital@1&family=Orbitron:wght@700&family=Patua+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Courier+Prime:ital@1&family=Orbitron:wght@700&family=Patua+One&family=Poppins&display=swap');
+
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Archivo Black', sans-serif;
+            font-family: 'Courier Prime', monospace;
+            font-family: 'Orbitron', sans-serif;
+            font-family: 'Patua One', cursive;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            width: auto;
+            background-color: rgb(28, 28, 88);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0px 23px;
+        }
+
+        nav ul li a {
+            font-family: 'Archivo Black', sans-serif;
+            font-family: 'Patua One', cursive;
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(154, 154, 241);
+        }
+
+        nav ul li a.active{
+            color: rgb(154, 154, 241);
+        }
+
+        main hr {
+            border: 0;
+            background: lavender;
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+
+        .left .index{
+            text-decoration: none;
+            color: white;
+            font-size: 1.5rem;
+            font-family: 'Archivo Black', sans-serif;
+            font-family: 'Courier Prime', monospace;
+            font-family: 'Orbitron', sans-serif;
+            font-family: 'Patua One', cursive;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .firstSection {
+            display: flex;
+            justify-content: space-around;
+            margin: 50px 0;
+            background-color: rgb(0, 0, 33);
+        }
+
+        .firstSection>div {
+            font-family: 'Archivo Black', sans-serif;
+            font-family: 'Patua One', cursive;
+            width: 50%;
+        }
+
+        .leftSection {
+            background: rgb(28, 28, 88);
+            margin-left: 200px;
+            height: auto;
+        }
+
+        .leftSection h1 {
+            padding: 20px;
+            display: block;
+            font-size: 4.0em;
+            margin-block-start: 0.67em;
+            margin-block-end: 0.67em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        .leftSection .text {
+            padding: 0px 20px;
+            background: rgb(28, 28, 88);
+            color: rgb(196, 196, 196);
+            font-size: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        .leftSection p {
+            padding: 10px;
+        }
+
+        .rightSection img {
+            width: 65%;
+            height: auto;
+        }
+
+
+        .secondSection {
+            max-width: 80vw;
+            margin: auto;
+            height: 100vh;
+        }
+
+        .secondSection h1 {
+            font-size: 3.0rem;
+            background-color: rgb(28, 28, 88);
+            letter-spacing: 5px;
+            text-align: center;
+        }
+
+        .secondSection .edu-Section {
+            padding: 20px 80px;
+        }
+
+        .secondSection .edu {
+            font-size: 30px;
+            font-weight: bold;
+            padding-top: 40px;
+        }
+
+        .secondSection .sub-edu {
+            font-size: 15px;
+            letter-spacing: 2px;
+            font-family: 'Times New Roman', Times, serif;
+            page-break-after: always;
+        }
+
+        .thirdSection {
+            max-width: 80vw;
+            margin: auto;
+            height: auto;
+        }
+
+        .thirdSection h1 {
+            font-size: 3.0rem;
+            background-color: rgb(28, 28, 88);
+            letter-spacing: 5px;
+            text-align: center;
+        }
+
+        .thirdSection .projectSection .box {
+            display: inline-flex;
+            box-sizing: border-box;
+            width: 350px;
+            height: 500px;
+            border-radius: 30px;
+            border: 1px solid white;
+            margin: 80px 28px;
+            align-items: flex-end;
+        }
+
+        .box img {
+            width: 150px;
+            height: max-content;
+            margin: 20px 100px;
+        }
+
+        .box .content .text {
+            margin: 10px 20px;
+            text-align: justify;
+            color: whitesmoke;
+        }
+
+        .box .content .buttons {
+            padding: 25px 114px;
+        }
+
+        .buttons .btn {
+            padding: 10px;
+            background: #0e104a;
+            color: white;
+            border: 1px solid white;
+            font-size: 20px;
+            cursor: pointer;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        footer {
+            background-color: #0e0e1a;
+            text-align: center;
+            height: auto;
+        }
+
+        footer .footer-first {
+            font-size: 15px;
+        }
+
+        .icons {
+            margin: 10px;
+        }
+
+        .icons a i {
+            width: 100px;
+            color: white;
+        }
+
+        footer .footer-third {
+            font-size: 12px;
+            color: grey;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left"><a class="index" href="index.html">Pratyush's Portfolio</a></div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a class="active" href="about.html">ABOUT ME</a></li>
+                    <li><a href="services.html">SERVICES</a></li>
+                    <li><a href="blog.html">MY BLOG</a></li>
+                    <li><a href="contact.html">CONTACT ME</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                <h1>So, who am I?</h1>
+                <div class="text">
+                    <p>Hello and welcome to my portfolio website! I'm Pratyush Raj, a passionate and innovative software
+                        developer with a strong commitment to creating robust, efficient, and user-friendly
+                        applications. My
+                        journey into the world of software development began with a fascination for technology and a
+                        curiosity to solve complex problems.</p>
+                    <p>I hold a 'A LEVEL' in IT from National Institute of Electronics & Information Technology
+                        (NIELIT),
+                        where I gained a solid foundation in computer science principles and programming languages.
+                        Throughout
+                        my academic journey, I actively participated in various coding competitions and hackathons,
+                        honing my
+                        skills and learning to thrive in a fast-paced, collaborative environment.</p>
+                </div>
+
+            </div>
+            <div class="rightSection">
+                <img src="assets/about.png" alt="">
+            </div>
+        </section>
+        <hr>
+        <section class="secondSection">
+            <h1>Educations</h1>
+            <div class="edu-Section">
+                <div class="edu">
+                    &#9830; A-LEVEL
+                </div>
+                <div class="sub-edu">
+                    National Institute of Electronics & Information Technology (NIELIT),Gorakhpur
+                </div>
+
+                <div class="edu">
+                    &#9830; O-LEVEL
+                </div>
+                <div class="sub-edu">
+                    National Institute of Electronics & Information Technology (NIELIT),Gorakhpur
+                </div>
+
+                <div class="edu">
+                    &#9830; CCC
+                </div>
+                <div class="sub-edu">
+                    National Institute of Electronics & Information Technology (NIELIT),Gorakhpur
+                </div>
+
+                <div class="edu">
+                    &#9830; B.Sc
+                </div>
+                <div class="sub-edu">
+                    Siddharth University, Kapilvastu, Siddharth Nagar, Uttar Pradesh, India
+                </div>
+
+                <div class="edu">
+                    &#9830; Senior Secondary
+                </div>
+                <div class="sub-edu">
+                    Central Board of Secondary Education, New Delhi, India
+                </div>
+
+                <div class="edu">
+                    &#9830; Secondary
+                </div>
+                <div class="sub-edu">
+                    Central Academy, Taramandal, Gorakhpur, Uttar Pradesh, India
+                </div>
+            </div>
+        </section>
+        <hr>
+        <section class="thirdSection">
+            <h1>My Projects</h1>
+            <div class="projectSection">
+                <div class="box">
+                    <div class="content">
+                        <img src="assets/desktopApp.png" alt="">
+                        <div class="text">Inventory management system is a software solution that helps businesses
+                            efficiently track, organize, and control their stock levels. It automates tasks like order
+                            processing, stock monitoring, and reordering to prevent stockouts and overstocking. By
+                            optimizing inventory.</div>
+                        <div class="buttons">
+                            <a href="https://github.com/PratyushRajMishra/inventory_management_system"><button class="btn">Read More..</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="content">
+                        <img src="assets/chat.png" alt="">
+                        <div class="text">ChatApp is a user-friendly messaging platform that enables real-time
+                            communication through text. With an intuitive interface and secure
+                            encryption, it allows users to connect. Stay connected and engaged with ChatApp's seamless
+                            and reliable messaging experience.</div>
+                        <div class="buttons">
+                            <a href="https://github.com/PratyushRajMishra/ChatApp_using_flutter"><button class="btn">Read More..</button></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="content">
+                        <img src="assets/web.png" alt="">
+                        <div class="text">A portfolio website showcases a person's or a professional's work, skills, and
+                            achievements in a concise and visually appealing manner. It serves as an online resume,
+                            highlighting projects, art, writing, or other creative endeavors. This is my portfolio website.</div>
+                        <div class="buttons">
+                            <a href="https://pratyushrajmishra.github.io/my_portfolio.github.io/" target="_blank"><button class="btn">Launch..</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Pratyush's Developer Portfolio</h3>
+            </div>
+            <div class="icons">
+                <a href="https://www.facebook.com/pratyushraj.mishra.79/" target="_blank"><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a href="https://www.linkedin.com/in/pratyush-raj-mishra-578596240/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+                <a href="https://www.instagram.com/__royal__bhumihar__/" target="_blank"><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/PratyushRajMishra"  target="_blank"><i class="fa-brands fa-github " target="_blank"></i></a>
+                <a href="https://www.youtube.com/channel/UCGoF7VOkMSPlS9BRCfODhyA " target="_blank"><i
+                        class="fa-brands fa-youtube"></i></a>
+            </div>
+            <div class="footer-third">
+                Copyright &#169; pratyushrajmishra.com | All rights reserved
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
