@@ -23,7 +23,6 @@
         }
 
         body {
-            text-align: center;
             background-color: rgb(0, 0, 33);
             color: white;
             font-family: 'Archivo Black', sans-serif;
@@ -44,30 +43,31 @@
             background-color: rgb(28, 28, 88);
         }
 
-        nav ul {
+        nav .right .navList {
             display: flex;
             justify-content: center;
         }
 
-        nav ul li {
+        .right .navList li {
             list-style: none;
             margin: 0px 23px;
         }
 
-        nav ul li a {
+        .right .navList li a {
             font-family: 'Archivo Black', sans-serif;
             font-family: 'Patua One', cursive;
             text-decoration: none;
             color: white;
         }
 
-        nav ul li a:hover {
+        .right .navList li a:hover {
             color: rgb(154, 154, 241);
         }
 
-        nav ul li a.active{
+        .right .navList li a.active {
             color: rgb(154, 154, 241);
         }
+
 
         main hr {
             border: 0;
@@ -161,20 +161,78 @@
             font-size: 12px;
             color: grey;
         }
+
+        .burger {
+            display: none;
+            position: absolute;
+            cursor: pointer;
+            right: 5%;
+            top: 15px;
+        }
+
+        .line {
+            width: 33px;
+            background-color: white;
+            height: 4px;
+            margin: 5px 3px;
+        }
+
+        /* tablet screen */
+        @media only screen and (max-width :1021px) and (min-width :578px) {
+            nav {
+                flex-direction: column;
+                justify-content: center;
+            }
+        }
+
+        /* mobile screen */
+        @media only screen and (max-width :578px) and (min-width :319px) {
+            nav {
+                height: auto;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            nav .left {
+                padding: 10px;
+            }
+
+            nav .navList {
+                flex-direction: column;
+                padding-bottom: 10px;
+            }
+
+            .burger {
+                display: block;
+            }
+
+            .h-nav-resp {
+                height: 0px;
+            }
+
+            .v-class-resp {
+                opacity: 0;
+            }
+        }
     </style>
 </head>
 <body>
     <header>
         <nav>
             <div class="left"><a class="index" href="index.html">Pratyush's Portfolio</a></div>
-            <div class="right">
-                <ul>
+            <div class="right h-nav-resp">
+                <ul class="navList v-class-resp">
                     <li><a href="index.html">HOME</a></li>
-                    <li><a href="about.html">ABOUT ME</a></li>
+                    <li><a class="active" href="about.html">ABOUT ME</a></li>
                     <li><a href="services.html">SERVICES</a></li>
-                    <li><a class="active" href="blog.html">MY BLOG</a></li>
+                    <li><a href="blog.html">MY BLOG</a></li>
                     <li><a href="contact.html">CONTACT ME</a></li>
                 </ul>
+            </div>
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
             </div>
         </nav>
     </header>
@@ -210,5 +268,15 @@
             </div>
         </div>
     </footer>
+    <script>
+        burger = document.querySelector('.burger')
+        navList = document.querySelector('.navList')
+        right = document.querySelector('.right')
+
+        burger.addEventListener('click', () => {
+            navList.classList.toggle('v-class-resp');
+            right.classList.toggle('h-nav-resp');
+        })
+    </script>
 </body>
 </html>
