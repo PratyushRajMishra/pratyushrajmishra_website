@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,7 +18,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Patua+One&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Courier+Prime:ital@1&family=Orbitron:wght@700&family=Patua+One&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Courier+Prime:ital@1&family=Orbitron:wght@700&family=Patua+One&family=Poppins&display=swap');
-    
+
 
         * {
             margin: 0px;
@@ -77,7 +78,7 @@
             margin: 60px 84px;
         }
 
-        .left .index{
+        .left .index {
             text-decoration: none;
             color: white;
             font-size: 1.5rem;
@@ -88,7 +89,7 @@
             font-family: 'Poppins', sans-serif;
         }
 
-        .firstSection{
+        .firstSection {
             margin: 80px 50px;
             height: auto;
         }
@@ -121,7 +122,7 @@
         .contact-lsleft input[type="email"],
         .contact-lsleft textarea {
             width: 100%;
-            color:white;
+            color: white;
             background: transparent;
             outline: none;
             letter-spacing: 1px;
@@ -219,6 +220,10 @@
                 flex-direction: column;
                 justify-content: center;
             }
+
+            .contact-lsleft input[type="submit"] {
+                margin: 0px 280px;
+            }
         }
 
         /* mobile screen */
@@ -249,11 +254,36 @@
             .v-class-resp {
                 opacity: 0;
             }
+
+            .firstSection {
+            margin: 80px 50px ;
+            height: auto;
         }
+            .contact-grid {
+                width: 90%;
+            }
 
+            .contact-grid h4,
+        .address-grid h4{
+            font-size: 2.0rem;
+            
+        }
+            .contact-lsleft input[type="text"],
+            .contact_mob_no,
+            .contact-lsleft input[type="email"],
+            .contact-lsleft textarea {
+                margin-left: 0px;
+                width: 100%;
+                margin-bottom: 25px;
+            }
 
+            .contact-lsleft input[type="submit"] {
+                margin: 0px 78px;
+            }
+        }
     </style>
 </head>
+
 <body>
     <header>
         <nav>
@@ -288,8 +318,8 @@
                                 <input type="email" name="cEmail" placeholder="Your Email" required="required" />
                             </div>
                             <div class="">
-                                <input type="number" class="contact_mob_no" name="cMobile" placeholder="Your Mobile Number"
-                                    required="required" />
+                                <input type="number" class="contact_mob_no" name="cMobile"
+                                    placeholder="Your Mobile Number" required="required" />
                             </div>
                             <div class="">
                                 <textarea name="cMessage" placeholder="Type Your Message Here..."
@@ -311,10 +341,12 @@
             <div class="icons">
                 <a href="https://www.facebook.com/pratyushraj.mishra.79/" target="_blank"><i
                         class="fa-brands fa-facebook"></i></a>
-                <a href="https://www.linkedin.com/in/pratyush-raj-mishra-578596240/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+                <a href="https://www.linkedin.com/in/pratyush-raj-mishra-578596240/" target="_blank"><i
+                        class="fa fa-linkedin-square"></i></a>
                 <a href="https://www.instagram.com/__royal__bhumihar__/" target="_blank"><i
                         class="fa-brands fa-instagram"></i></a>
-                <a href="https://github.com/PratyushRajMishra"  target="_blank"><i class="fa-brands fa-github " target="_blank"></i></a>
+                <a href="https://github.com/PratyushRajMishra" target="_blank"><i class="fa-brands fa-github "
+                        target="_blank"></i></a>
                 <a href="https://www.youtube.com/channel/UCGoF7VOkMSPlS9BRCfODhyA " target="_blank"><i
                         class="fa-brands fa-youtube"></i></a>
             </div>
@@ -335,4 +367,5 @@
         })
     </script>
 </body>
+
 </html>

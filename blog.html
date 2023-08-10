@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,13 +10,12 @@
     <script src="https://kit.fontawesome.com/0a5499f580.js" crossorigin="anonymous"></script>
 
     <style>
-
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Fira+Sans&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Anton&family=Fira+Sans&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Patua+One&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Courier+Prime:ital@1&family=Orbitron:wght@700&family=Patua+One&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Archivo+Black&family=Courier+Prime:ital@1&family=Orbitron:wght@700&family=Patua+One&family=Poppins&display=swap');
-    
+
 
         * {
             margin: 0px;
@@ -76,7 +76,7 @@
             margin: 60px 84px;
         }
 
-        .left .index{
+        .left .index {
             text-decoration: none;
             color: white;
             font-size: 1.5rem;
@@ -88,14 +88,14 @@
         }
 
         .firstSection {
-            height: 75vh;
+            height: 100vh;
         }
 
-        .firstSection .upSection{
+        .firstSection .upSection {
             margin: 150px 200px 0px;
         }
 
-        .firstSection .upSection h1{
+        .firstSection .upSection h1 {
             font-size: 6.0rem;
             text-align: center;
             letter-spacing: 7px;
@@ -105,21 +105,24 @@
             opacity: 0.8;
         }
 
-        .firstSection .downSection{
+        .firstSection .downSection {
+            display: flex;
             justify-content: center;
             height: auto;
             margin: 50px 200px;
+            flex-direction: column;
+            align-items: center;
         }
 
-        .firstSection .downSection h3{
+        .firstSection .downSection h3 {
             text-align: center;
             font-family: 'Times New Roman', Times, serif;
             letter-spacing: 2px;
-            font-size: 35px;
+            font-size: 3.0rem;
             padding: 20px;
         }
 
-        .firstSection .downSection button{
+        .firstSection .downSection button {
             font-size: large;
             padding: 12px;
             cursor: pointer;
@@ -127,14 +130,14 @@
             border: 2px solid white;
         }
 
-        .firstSection .downSection .btn{
+        .firstSection .downSection .btn {
             text-align: center;
             background-color: transparent;
             color: white;
-            
+
         }
 
-        .firstSection .downSection .btn:hover{
+        .firstSection .downSection .btn:hover {
             font-size: x-large;
         }
 
@@ -183,6 +186,14 @@
                 flex-direction: column;
                 justify-content: center;
             }
+
+            .firstSection {
+            height: 100vh;
+        }
+
+            .firstSection .upSection h1{
+                font-size: 5.0rem;
+            }
         }
 
         /* mobile screen */
@@ -213,9 +224,31 @@
             .v-class-resp {
                 opacity: 0;
             }
+
+            firstSection {
+            height: 100vh;
+        }
+
+        .firstSection .upSection {
+            margin: 200px 50px 0px ;
+        }
+            .firstSection .upSection h1{
+                font-size: 4.0rem;
+            }
+
+            .firstSection .downSection {
+                margin: 50px 0px;
+            }
+
+            .firstSection .downSection h3{
+                font-size: 2.0rem;
+            }
+
+
         }
     </style>
 </head>
+
 <body>
     <header>
         <nav>
@@ -244,7 +277,8 @@
 
             <div class="downSection">
                 <h3>To see MY BLOGS</h3>
-                <a href="https://www.blogger.com/blog/posts/166241013198741006" target="_blank"><button class="btn">Click Here..</button></a>
+                <a href="https://www.blogger.com/blog/posts/166241013198741006" target="_blank"><button
+                        class="btn">Click Here..</button></a>
             </div>
         </section>
     </main>
@@ -256,10 +290,12 @@
             <div class="icons">
                 <a href="https://www.facebook.com/pratyushraj.mishra.79/" target="_blank"><i
                         class="fa-brands fa-facebook"></i></a>
-                <a href="https://www.linkedin.com/in/pratyush-raj-mishra-578596240/" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+                <a href="https://www.linkedin.com/in/pratyush-raj-mishra-578596240/" target="_blank"><i
+                        class="fa fa-linkedin-square"></i></a>
                 <a href="https://www.instagram.com/__royal__bhumihar__/" target="_blank"><i
                         class="fa-brands fa-instagram"></i></a>
-                <a href="https://github.com/PratyushRajMishra"  target="_blank"><i class="fa-brands fa-github " target="_blank"></i></a>
+                <a href="https://github.com/PratyushRajMishra" target="_blank"><i class="fa-brands fa-github "
+                        target="_blank"></i></a>
                 <a href="https://www.youtube.com/channel/UCGoF7VOkMSPlS9BRCfODhyA " target="_blank"><i
                         class="fa-brands fa-youtube"></i></a>
             </div>
@@ -279,4 +315,5 @@
         })
     </script>
 </body>
+
 </html>

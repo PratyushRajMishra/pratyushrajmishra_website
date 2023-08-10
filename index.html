@@ -67,7 +67,7 @@
         .right .navList li a.active {
             color: rgb(154, 154, 241);
         }
-        
+
         main hr {
             border: 0;
             background: lavender;
@@ -123,8 +123,12 @@
             background-color: #585ccd;
         }
 
+        .rightSection {
+            margin: 0px;
+        }
+
         .rightSection img {
-            width: 70%;
+            width: 20rem;
             border-radius: 10% 50%;
             box-shadow: 10px 20px 10px rgb(148, 60, 231);
         }
@@ -185,7 +189,7 @@
             background-color: #0e0e1a;
             text-align: center;
             height: auto;
-            width: 100vw;
+            width: 100%;
         }
 
         footer .footer-first {
@@ -227,6 +231,70 @@
                 flex-direction: column;
                 justify-content: center;
             }
+
+            .firstSection {
+                margin: 100px 100px;
+                flex-direction: column-reverse;
+                justify-content: space-around;
+                align-items: center;
+                width: 70%;
+            }
+
+            .firstSection>div {
+                width: 100%;
+            }
+
+            .rightSection {
+                width: 10%;
+                display: flex;
+                justify-content: center;
+            }
+
+            .rightSection img {
+                width: 30rem;
+            }
+
+            .leftSection {
+                font-size: 3.5rem;
+                margin: 80px 0px;
+            }
+
+            .leftSection .buttons {
+                display: flex;
+                justify-content: space-evenly;
+                padding: 30px;
+            }
+
+            .leftSection .btn {
+                padding: 18px;
+                font-size: 25px;
+            }
+
+            .secondSection {
+                max-width: 80%;
+            }
+
+            .secondSection h1 {
+                font-size: 2.5rem;
+            }
+
+            .text-gray {
+                font-size: 1.5rem;
+            }
+
+            .secondSection .box {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 450px;
+                margin: 70px 80px;
+            }
+
+            .box img {
+                width: 100px;
+                margin: 30px 175px;
+            }
+
         }
 
         /* mobile screen */
@@ -257,8 +325,73 @@
             .v-class-resp {
                 opacity: 0;
             }
-        }
 
+        
+            .firstSection {
+                flex-direction: column-reverse;
+                justify-content: space-around;
+                align-items: center;
+                width: 100%;
+            }
+
+            .firstSection>div {
+                width: 95%;
+            }
+
+            .rightSection {
+                width: 50%;
+                display: flex;
+                justify-content: center;
+            }
+
+            .rightSection img {
+                width: 15rem;
+            }
+
+            .leftSection {
+                font-size: 3.0rem;
+                margin: 80px 0px;
+            }
+
+            .leftSection .buttons {
+                display: flex;
+                justify-content: space-evenly;
+                padding: 30px;
+            }
+
+            .leftSection .btn {
+                padding: 10px;
+                font-size: 20px;
+            }
+
+            main hr{
+                margin: 60px 40px;
+            }
+            .secondSection {
+                max-width: 100%;
+            }
+
+            .secondSection h1 {
+                font-size: 2.0rem;
+                margin: 0px 60px;
+            }
+
+            .text-gray {
+                font-size: 1.0rem;
+                margin: 0px 60px;
+            }
+
+            .secondSection .box {
+                width: 350px;
+                margin: 30px 20px;
+            }
+
+            .box img {
+                width: 100px;
+                margin: 30px 120px;
+            }
+
+        }
     </style>
 
 </head>
